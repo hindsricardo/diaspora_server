@@ -1,6 +1,5 @@
 var pwdMgr = require('./managePasswords');
 var validateRequest = require("./validateRequest");
-var validateOrgRequest = require("./validateOrgRequest");
 
 
 
