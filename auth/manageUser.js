@@ -12,12 +12,6 @@ module.exports = function (server, db) {
         unique: true
     })
 
-    db.appOrgs.createIndex({
-        accountUsername: 1
-    },{
-        unique: true
-    })
-
 // USER REGISTER
     server.post('/api/v1/diaspora/auth/register', function (req, res, next) {
         var user = req.params;
