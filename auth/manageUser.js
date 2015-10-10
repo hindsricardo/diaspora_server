@@ -19,7 +19,7 @@ module.exports = function (server, db) {
     })
 
 // USER REGISTER
-    server.post('/api/v1/bucketList/auth/register', function (req, res, next) {
+    server.post('/api/v1/diaspora/auth/register', function (req, res, next) {
         var user = req.params;
        // pwdMgr.cryptPassword(user.password, function (err, hash) {
             //user.password = hash;
@@ -48,7 +48,7 @@ module.exports = function (server, db) {
     });
 
 
-    server.get('/api/v1/bucketList/data/user',function(req, res, next){
+    server.get('/api/v1/diaspora/data/user',function(req, res, next){
         validateRequest.validate(req, res, db, function () {
             db.appUsers.findOne({
                 email: req.params.token
