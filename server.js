@@ -1,7 +1,7 @@
 var restify     =   require('restify');
 var mongojs     =   require('mongojs');
 var	morgan  	= 	require('morgan');
-var db          =   mongojs('mongodb://hindsricardo:Car81you@dogen.mongohq.com:10096/bucketlist', ['appUsers','diasporas','activity']);
+var db          =   mongojs('mongodb://hindsricardo:Car81you@c774.candidate.51.mongolayer.com:10774,candidate.56.mongolayer.com:10018,candidate.51.mongolayer.com:10774/diasporaApp?replicaSet=set-5619361214fad5319e0013c3', ['appUsers','diasporas','activity']);
 var server      =   restify.createServer();
 
 
